@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TruthCheck — Проверка достоверности информации</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <span class="logo-icon">✓</span>
+    Truth<span>Check</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Главная</a></li>
+    <li><a href="about.html">О проекте</a></li>
+    <li><a href="team.html">Участники</a></li>
+    <li><a href="journal.html">Журнал</a></li>
+    <li><a href="resources.html">Ресурсы</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">Проектная практика 2026</div>
+    <h1>Проверяйте<br><em>достоверность</em><br>информации</h1>
+    <p>TruthCheck анализирует текст, ссылки, изображения и видео — и показывает уровень доверия к контенту на основе нескольких источников.</p>
+    <div class="hero-btns">
+      <a href="about.html" class="btn-primary">Узнать о проекте →</a>
+      <a href="journal.html" class="btn-ghost">Журнал прогресса</a>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-row">
+    <div class="stat-item">
+      <span class="stat-num">3+</span>
+      <span class="stat-label">Типа контента</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">Trust Score</span>
+      <span class="stat-label">Индекс доверия</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">AI</span>
+      <span class="stat-label">Анализ текста</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">Deepfake</span>
+      <span class="stat-label">Обнаружение</span>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <p class="section-label">Как это работает</p>
+    <h2 class="section-title">Четыре шага до результата</h2>
+    <p class="section-sub">Сервис проверяет контент автоматически и выдаёт понятный результат за 30 секунд — 2 минуты.</p>
+
+    <div style="display:flex; gap:48px; flex-wrap:wrap; align-items:flex-start;">
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Загрузите контент</h4>
+            <p>Вставьте ссылку, загрузите текст, изображение или видеофайл в систему.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Анализ источника</h4>
+            <p>Проверяем репутацию источника и ищем подтверждения в базах данных.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Обнаружение артефактов</h4>
+            <p>ИИ проверяет признаки генерации текста, deepfake и монтажа видео.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Получите Trust Score</h4>
+            <p>Итоговый балл от 0 до 100 и рекомендации по дальнейшей проверке.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="score-demo">
+        <div class="score-ring">
+          <svg viewBox="0 0 140 140" width="140" height="140">
+            <circle class="track" cx="70" cy="70" r="60"/>
+            <circle class="fill" cx="70" cy="70" r="60"
+              stroke="#f5c842"
+              stroke-dasharray="377"
+              stroke-dashoffset="104"/>
+          </svg>
+          <div class="score-center">
+            <span class="score-num" style="color:#f5c842">72</span>
+            <span class="score-of">из 100</span>
+          </div>
+        </div>
+        <div style="font-family:'Syne',sans-serif; font-weight:700; margin-bottom:8px;">Уровень доверия: <span style="color:#f5c842">Средний</span></div>
+        <div style="font-size:0.82rem; color:var(--text-muted); margin-bottom:16px;">Контент требует дополнительной проверки</div>
+        <div class="trust-levels">
+          <span class="trust-tag high">Высокий 80–100</span>
+          <span class="trust-tag mid">Средний 40–79</span>
+          <span class="trust-tag low">Низкий 0–39</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PIPELINE DIAGRAM -->
+  <section>
+    <p class="section-label">Схема работы</p>
+    <h2 class="section-title">Как TruthCheck обрабатывает контент</h2>
+    <p class="section-sub">Диаграмма показывает путь от загрузки файла до формирования итоговой оценки.</p>
+
+    <div style="overflow-x:auto;">
+      <svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:900px;display:block;margin:0 auto;">
+        <!-- Boxes -->
+        <!-- 1 Контент -->
+        <rect x="10" y="70" width="140" height="60" rx="10" fill="#111418" stroke="#00e5a0" stroke-width="1.5"/>
+        <text x="80" y="97" text-anchor="middle" fill="#00e5a0" font-family="Syne,sans-serif" font-size="11" font-weight="700">📥 Контент</text>
+        <text x="80" y="114" text-anchor="middle" fill="#6b7785" font-family="Manrope,sans-serif" font-size="10">текст / фото / видео</text>
+
+        <!-- Arrow -->
+        <line x1="152" y1="100" x2="178" y2="100" stroke="#2a3240" stroke-width="2"/>
+        <polygon points="178,95 188,100 178,105" fill="#2a3240"/>
+
+        <!-- 2 Источник -->
+        <rect x="190" y="70" width="140" height="60" rx="10" fill="#111418" stroke="#2a3240" stroke-width="1.5"/>
+        <text x="260" y="97" text-anchor="middle" fill="#e8edf3" font-family="Syne,sans-serif" font-size="11" font-weight="700">🔍 Источник</text>
+        <text x="260" y="114" text-anchor="middle" fill="#6b7785" font-family="Manrope,sans-serif" font-size="10">репутация домена</text>
+
+        <!-- Arrow -->
+        <line x1="332" y1="100" x2="358" y2="100" stroke="#2a3240" stroke-width="2"/>
+        <polygon points="358,95 368,100 358,105" fill="#2a3240"/>
+
+        <!-- 3 AI-анализ -->
+        <rect x="370" y="70" width="140" height="60" rx="10" fill="#111418" stroke="#2a3240" stroke-width="1.5"/>
+        <text x="440" y="97" text-anchor="middle" fill="#e8edf3" font-family="Syne,sans-serif" font-size="11" font-weight="700">🤖 AI-анализ</text>
+        <text x="440" y="114" text-anchor="middle" fill="#6b7785" font-family="Manrope,sans-serif" font-size="10">deepfake / генерация</text>
+
+        <!-- Arrow -->
+        <line x1="512" y1="100" x2="538" y2="100" stroke="#2a3240" stroke-width="2"/>
+        <polygon points="538,95 548,100 538,105" fill="#2a3240"/>
+
+        <!-- 4 Агрегация -->
+        <rect x="550" y="70" width="140" height="60" rx="10" fill="#111418" stroke="#2a3240" stroke-width="1.5"/>
+        <text x="620" y="97" text-anchor="middle" fill="#e8edf3" font-family="Syne,sans-serif" font-size="11" font-weight="700">⚙️ Агрегация</text>
+        <text x="620" y="114" text-anchor="middle" fill="#6b7785" font-family="Manrope,sans-serif" font-size="10">взвешенный расчёт</text>
+
+        <!-- Arrow -->
+        <line x1="692" y1="100" x2="718" y2="100" stroke="#00e5a0" stroke-width="2"/>
+        <polygon points="718,95 728,100 718,105" fill="#00e5a0"/>
+
+        <!-- 5 Trust Score -->
+        <rect x="730" y="60" width="155" height="80" rx="10" fill="#0d1f18" stroke="#00e5a0" stroke-width="2"/>
+        <text x="808" y="92" text-anchor="middle" fill="#00e5a0" font-family="Syne,sans-serif" font-size="13" font-weight="800">Trust Score</text>
+        <text x="808" y="112" text-anchor="middle" fill="#e8edf3" font-family="Syne,sans-serif" font-size="20" font-weight="800">0–100</text>
+
+        <!-- Labels below -->
+        <text x="80" y="155" text-anchor="middle" fill="#2a3240" font-family="Manrope,sans-serif" font-size="9">Шаг 1</text>
+        <text x="260" y="155" text-anchor="middle" fill="#2a3240" font-family="Manrope,sans-serif" font-size="9">Шаг 2</text>
+        <text x="440" y="155" text-anchor="middle" fill="#2a3240" font-family="Manrope,sans-serif" font-size="9">Шаг 3</text>
+        <text x="620" y="155" text-anchor="middle" fill="#2a3240" font-family="Manrope,sans-serif" font-size="9">Шаг 4</text>
+        <text x="808" y="162" text-anchor="middle" fill="#00e5a0" font-family="Manrope,sans-serif" font-size="9">Результат</text>
+      </svg>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FEATURES -->
+  <section>
+    <p class="section-label">Возможности</p>
+    <h2 class="section-title">Что умеет TruthCheck</h2>
+    <p class="section-sub">Комплексная проверка контента с использованием нескольких методов анализа.</p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">📄</div>
+        <h3>Анализ текста</h3>
+        <p>Распознавание признаков AI-генерации, проверка фактов и поиск первоисточников публикации.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔗</div>
+        <h3>Проверка ссылок</h3>
+        <p>Оценка репутации домена, проверка SSL, история ресурса и анализ связанных материалов.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🖼️</div>
+        <h3>Анализ изображений</h3>
+        <p>Обнаружение монтажа, поиск оригинала изображения и проверка метаданных файла.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎬</div>
+        <h3>Обнаружение deepfake</h3>
+        <p>Проверка видеофайлов на артефакты генерации и признаки подмены лица или голоса.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Trust Score</h3>
+        <p>Агрегированный балл доверия от 0 до 100 на основе всех методов проверки.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📁</div>
+        <h3>История проверок</h3>
+        <p>Сохранение всех предыдущих проверок с возможностью экспорта отчётов.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+</body>
+</html>

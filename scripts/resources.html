@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ресурсы — TruthCheck</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <span class="logo-icon">✓</span>
+    Truth<span>Check</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О проекте</a></li>
+    <li><a href="team.html">Участники</a></li>
+    <li><a href="journal.html">Журнал</a></li>
+    <li><a href="resources.html" class="active">Ресурсы</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <div class="page-header">
+    <p class="section-label">Ресурсы</p>
+    <h1 class="section-title">Полезные материалы</h1>
+    <p class="section-sub">Ссылки на источники, которые помогут лучше понять тему проекта, инструменты и технологии.</p>
+  </div>
+
+  <!-- VIDEO -->
+  <section>
+    <p class="section-label">Видео по теме</p>
+    <h2 class="section-title" style="font-size:1.5rem; margin-bottom:8px;">Что такое deepfake</h2>
+    <p class="section-sub" style="margin-bottom:24px;">В видео представлен пример deepfake который был выложен в сеть и собрал много просмотров</p>
+    <div style="max-width:720px;">
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/cQ54GDm1eL0"
+          title="Что такое deepfake"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <div class="divider"></div>
+
+  <section>
+    <p class="section-label">По теме проекта</p>
+    <h2 class="section-title" style="font-size:1.5rem; margin-bottom:24px;">Верификация информации и deepfake</h2>
+
+    <div class="resources-grid">
+      <a href="https://snopes.com" target="_blank" class="resource-card">
+        <div class="resource-icon">🔍</div>
+        <div>
+          <div class="resource-title">Snopes</div>
+          <div class="resource-desc">Один из старейших и авторитетных fact-checking ресурсов. Пример того, как устроена верификация информации.</div>
+          <span class="resource-link">snopes.com</span>
+        </div>
+      </a>
+      <a href="https://www.media-literacy.ru" target="_blank" class="resource-card">
+        <div class="resource-icon">📰</div>
+        <div>
+          <div class="resource-title">Медиаграмотность.рф</div>
+          <div class="resource-desc">Российский ресурс о медиаграмотности, распознавании фейков и критическом мышлении.</div>
+          <span class="resource-link">media-literacy.ru</span>
+        </div>
+      </a>
+      <a href="https://fakecheck.ru" target="_blank" class="resource-card">
+        <div class="resource-icon">✅</div>
+        <div>
+          <div class="resource-title">FakeCheck</div>
+          <div class="resource-desc">Российский сервис проверки фейков — аналог нашего проекта, полезный для понимания рынка.</div>
+          <span class="resource-link">fakecheck.ru</span>
+        </div>
+      </a>
+      <a href="https://deepware.ai" target="_blank" class="resource-card">
+        <div class="resource-icon">🤖</div>
+        <div>
+          <div class="resource-title">Deepware Scanner</div>
+          <div class="resource-desc">Инструмент для обнаружения deepfake-видео. Показывает подход к техническому решению проблемы.</div>
+          <span class="resource-link">deepware.ai</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <p class="section-label">Инструменты практики</p>
+    <h2 class="section-title" style="font-size:1.5rem; margin-bottom:24px;">Git, HTML, CSS и Markdown</h2>
+
+    <div class="resources-grid">
+      <a href="https://git-scm.com/book/ru/v2" target="_blank" class="resource-card">
+        <div class="resource-icon">📗</div>
+        <div>
+          <div class="resource-title">Официальная документация Git</div>
+          <div class="resource-desc">Полная книга по Git на русском языке от создателей системы контроля версий.</div>
+          <span class="resource-link">git-scm.com/book/ru/v2</span>
+        </div>
+      </a>
+      <a href="https://ru.hexlet.io/courses/intro_to_git" target="_blank" class="resource-card">
+        <div class="resource-icon">🎓</div>
+        <div>
+          <div class="resource-title">Курс по Git на Hexlet</div>
+          <div class="resource-desc">Бесплатный интерактивный курс по основам Git для начинающих разработчиков.</div>
+          <span class="resource-link">ru.hexlet.io/courses/intro_to_git</span>
+        </div>
+      </a>
+      <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element" target="_blank" class="resource-card">
+        <div class="resource-icon">🌐</div>
+        <div>
+          <div class="resource-title">Элементы HTML — MDN</div>
+          <div class="resource-desc">Справочник по всем HTML-элементам от Mozilla. Лучший источник по стандартам веб-разметки.</div>
+          <span class="resource-link">developer.mozilla.org</span>
+        </div>
+      </a>
+      <a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank" class="resource-card">
+        <div class="resource-icon">🎨</div>
+        <div>
+          <div class="resource-title">Основы CSS — MDN</div>
+          <div class="resource-desc">Полная документация по CSS на русском языке: свойства, селекторы, анимации.</div>
+          <span class="resource-link">developer.mozilla.org/ru/docs/Web/CSS</span>
+        </div>
+      </a>
+      <a href="https://doka.guide" target="_blank" class="resource-card">
+        <div class="resource-icon">📖</div>
+        <div>
+          <div class="resource-title">Doka Guide</div>
+          <div class="resource-desc">Русскоязычная документация по веб-технологиям — HTML, CSS, JS. Написана понятно для начинающих.</div>
+          <span class="resource-link">doka.guide</span>
+        </div>
+      </a>
+      <a href="https://ru.hexlet.io/lesson_filters/markdown" target="_blank" class="resource-card">
+        <div class="resource-icon">📝</div>
+        <div>
+          <div class="resource-title">Уроки по Markdown — Hexlet</div>
+          <div class="resource-desc">Практические уроки по синтаксису Markdown для написания документации.</div>
+          <span class="resource-link">ru.hexlet.io</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+
+</body>
+</html>
